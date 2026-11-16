@@ -1,0 +1,12 @@
+{
+    "model": "MobileNetV2",
+    "test_accuracy": 0.9185185432434082,
+    "test_loss": 0.2422379106283188,
+    "test_macro_f1": 0.9186997898900012,
+    "test_images": 135,
+    "class_names": [
+        "paper",
+        "plastic",
+        "metal"
+    ]
+}

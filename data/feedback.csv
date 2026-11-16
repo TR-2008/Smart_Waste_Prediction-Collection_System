@@ -1,0 +1,31 @@
+comment_id,text,sentiment_label
+P03_F28,The metal container is labelled number four.,neutral
+P03_F16,I am disappointed with the damaged plastic bin.,negative
+P03_F24,There are three bins beside the classroom.,neutral
+P03_F18,The confusing sorting signs are annoying.,negative
+P03_F09,I appreciate the clean bins and careful collection.,positive
+P03_F10,The recycling activity was enjoyable and helpful.,positive
+P03_F29,The collection vehicle arrived at noon.,neutral
+P03_F25,The pickup record has two entries.,neutral
+P03_F13,The litter around the gate is disgusting.,negative
+P03_F01,The collection team did an excellent job.,positive
+P03_F05,The tidy park looks beautiful after collection.,positive
+P03_F17,The rude response to the complaint was upsetting.,negative
+P03_F06,The new paper bin is useful and easy to find.,positive
+P03_F14,The late collection is frustrating.,negative
+P03_F12,I am unhappy because the pickup was missed.,negative
+P03_F23,The paper container has a blue lid.,neutral
+P03_F02,The clean recycling area is wonderful.,positive
+P03_F03,The helpful staff explained the sorting rules clearly.,positive
+P03_F26,The plastic container is near the wall.,neutral
+P03_F04,I am happy with the reliable pickup service.,positive
+P03_F22,The collection day is Tuesday.,neutral
+P03_F27,The campus map shows the bin locations.,neutral
+P03_F19,"Excellent, the full bin has been ignored again.",negative
+P03_F30,The recycling notice is on the board.,neutral
+P03_F21,The bin is next to the gate.,neutral
+P03_F08,The friendly team gave great support.,positive
+P03_F11,The overflowing bin smells terrible.,negative
+P03_F15,The dirty recycling area is unpleasant.,negative
+P03_F20,The new bin is useful but the missed pickup is unacceptable.,negative
+P03_F07,The quick response to the litter report was excellent.,positive

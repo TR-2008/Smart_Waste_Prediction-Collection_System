@@ -1,0 +1,81 @@
+{
+  "project_id": 3,
+  "title": "Community Waste Collection and Sorting Assistant",
+  "tabular_source": "Generated tabular practice data",
+  "generated_data": true,
+  "target": "needs_collection",
+  "target_definition": "Set needs_collection to 1 when the simulated next morning fill level reaches 90 percent, otherwise 0. The future fill value creates the teaching label and must not be a predictor. The 90 percent threshold is an exercise setting.",
+  "task": "classification",
+  "numeric_features": [
+    "fill_pct",
+    "days_since_collection",
+    "footfall",
+    "capacity_l"
+  ],
+  "categorical_features": [
+    "location_type"
+  ],
+  "cluster_features": [
+    "fill_pct",
+    "days_since_collection",
+    "footfall",
+    "capacity_l"
+  ],
+  "numeric_ranges": {
+    "fill_pct": [
+      20,
+      95
+    ],
+    "days_since_collection": [
+      1,
+      7
+    ],
+    "footfall": [
+      20,
+      300
+    ],
+    "capacity_l": [
+      40,
+      120
+    ]
+  },
+  "category_values": {
+    "location_type": [
+      "campus",
+      "market",
+      "park"
+    ]
+  },
+  "tabular_rows": 1000,
+  "tabular_split_counts": {
+    "train": 700,
+    "test": 150,
+    "validation": 150
+  },
+  "image_source": "TrashNet maintained by Gary Thung and Mindy Yang",
+  "image_classes": [
+    "paper",
+    "plastic",
+    "metal"
+  ],
+  "image_shape": [
+    96,
+    96,
+    3
+  ],
+  "image_input_scale": "uint8 0 to 255; model rescales once",
+  "image_split_counts": {
+    "train": 630,
+    "validation": 135,
+    "test": 135
+  },
+  "feedback_rows": 30,
+  "feedback_label_counts": {
+    "neutral": 10,
+    "negative": 10,
+    "positive": 10
+  },
+  "feedback_origin": "Authored classroom examples with supplied reference labels; not a real survey",
+  "seed": 42,
+  "prepared_on": "2026-11-11"
+}

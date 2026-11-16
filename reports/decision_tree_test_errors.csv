@@ -1,0 +1,6 @@
+record_id,fill_pct,days_since_collection,footfall,capacity_l,location_type,actual,predicted
+P03_0105,80,3,264,120,park,0,1
+P03_0108,70,7,58,80,market,0,1
+P03_0130,68,5,110,120,campus,1,0
+P03_0226,43,7,194,120,park,1,0
+P03_0284,57,6,241,40,campus,0,1

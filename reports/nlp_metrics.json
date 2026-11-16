@@ -1,0 +1,6 @@
+{
+  "reference_rows": 30,
+  "vader_accuracy": 0.9333333333333333,
+  "vader_macro_f1": 0.934609250398724,
+  "note": "VADER is lexicon-based, not trained on the supplied comments."
+}
