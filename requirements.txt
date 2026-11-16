@@ -1,0 +1,11 @@
+# Starter dependency ranges. Before final deployment, pin the exact
+# TensorFlow and scikit-learn versions used to train/serialize your models.
+streamlit>=1.40,<2
+tensorflow>=2.21.0
+scikit-learn>=1.6.1
+joblib>=1.6.0
+numpy>=2.4.6
+pandas>=2.1,<3
+Pillow>=10,<13
+nltk>=3.8,<4
+matplotlib>=3.8,<4
