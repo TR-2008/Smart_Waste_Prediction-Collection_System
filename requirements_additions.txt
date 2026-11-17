@@ -1,0 +1,12 @@
+# Merge these with the existing requirements only after comparing with the
+# exact versions printed by the training Colab runtime.
+streamlit
+tensorflow
+scikit-learn
+joblib
+numpy
+pandas
+Pillow
+nltk
+matplotlib
+groq
