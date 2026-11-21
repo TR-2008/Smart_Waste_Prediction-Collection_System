@@ -26,3 +26,6 @@ data/raw/
 
 # Local runtime files
 .streamlit/cache/
+
+.streamlit/secrets.toml
+.env

@@ -2,7 +2,7 @@
   "system_mode": "Advanced",
   "theme": "Dark",
   "image_model": "MobileNetV2",
-  "summary_mode": "Offline",
+  "summary_mode": "Groq",
   "dashboard_layout": "Expanded",
   "notifications": true,
   "auto_model_loading": true

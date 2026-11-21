@@ -37,8 +37,42 @@ st.markdown('### Recognition history')
 history=get_recognition_history(100)
 if history:
     d=pd.DataFrame(history); x,y=st.columns(2)
-    with x: st.markdown('**Material distribution**'); st.bar_chart(d.material.value_counts())
-    with y: st.markdown('**Confidence trend · latest 30**'); st.line_chart(d.head(30).iloc[::-1].set_index('time')['confidence'])
-    st.dataframe(d,use_container_width=True,hide_index=True)
-    if st.button('Clear saved recognition history'): clear_recognition_history(); st.rerun()
+    with x:
+        st.markdown("**Material distribution**")
+
+        # Support different history column names
+        material_column = next(
+            (
+                col for col in [
+                    "material",
+                    "class",
+                    "predicted_material",
+                    "prediction"
+                ]
+                if col in d.columns
+            ),
+            None
+        )
+
+        if material_column:
+            distribution = (
+                d[material_column]
+                .dropna()
+                .astype(str)
+                .value_counts()
+            )
+
+            if not distribution.empty:
+                st.bar_chart(distribution)
+            else:
+                st.info("No material recognition records available.")
+        else:
+            st.info(
+                "Material history does not contain a recognized "
+                "material column yet."
+            )
+            st.caption(
+                "Available columns: "
+                + ", ".join(map(str, d.columns))
+            )
 else: st.info('No saved recognition records yet. History is stored locally in data/app_history.sqlite3.')
