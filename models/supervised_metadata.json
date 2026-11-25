@@ -1,0 +1,26 @@
+{
+  "features": [
+    "fill_pct",
+    "days_since_collection",
+    "footfall",
+    "capacity_l",
+    "location_type"
+  ],
+  "numeric_features": [
+    "fill_pct",
+    "days_since_collection",
+    "footfall",
+    "capacity_l"
+  ],
+  "categorical_features": [
+    "location_type"
+  ],
+  "target": "needs_collection",
+  "target_definition": "Set needs_collection to 1 when the simulated next morning fill level reaches 90 percent, otherwise 0. The future fill value creates the teaching label and must not be a predictor. The 90 percent threshold is an exercise setting.",
+  "decision_tree_max_depth": 4,
+  "random_state": 42,
+  "class_labels": {
+    "0": "No collection review",
+    "1": "Collection review"
+  }
+}
